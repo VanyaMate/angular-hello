@@ -3,14 +3,17 @@ import { RouterOutlet } from '@angular/router';
 import { ProductCardComponent } from './entities/product-card/product-card.component';
 import { NgForOf } from '@angular/common';
 import {
-    ProductAddToCartComponent
+    ProductAddToCartComponent,
 } from './features/product-add-to-cart/product-add-to-cart.component';
+import {
+    ProductCardComponent as ProductCartComponent,
+} from './features/product-card/product-card.component';
 
 
 @Component({
     selector   : 'app-root',
     standalone : true,
-    imports: [ RouterOutlet, ProductCardComponent, NgForOf, ProductAddToCartComponent ],
+    imports    : [ RouterOutlet, ProductCardComponent, NgForOf, ProductAddToCartComponent, ProductCartComponent ],
     templateUrl: './app.component.html',
     styleUrl   : './app.component.scss',
 })
