@@ -1,0 +1,7 @@
+<div class="container" *ngIf="product">
+    <ng-content select=".header-card"></ng-content>
+    <h3 class="title">{{ product.title }}</h3>
+    <p class="description">{{ product.description }}</p>
+    <p class="date">{{ product.date }}</p>
+    <ng-content select=".footer-card"></ng-content>
+</div>
