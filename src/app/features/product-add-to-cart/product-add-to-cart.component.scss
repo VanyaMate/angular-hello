@@ -1,0 +1,8 @@
+.button {
+    transition : .1s;
+    padding    : 10px;
+
+    &.loading {
+        background : red;
+    }
+}
