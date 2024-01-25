@@ -1,7 +1,8 @@
 <div>
-    <app-product-cart></app-product-cart>
+    <app-product-cart/>
     <app-product-card *ngFor="let product of products" [product]="product">
         <div class="header-card">HEADER</div>
-        <app-product-add-to-cart class="footer-card" [id]="product.title"></app-product-add-to-cart>
+        <app-product-add-to-cart class="footer-card" [id]="product.title"/>
     </app-product-card>
+    <router-outlet/>
 </div>
